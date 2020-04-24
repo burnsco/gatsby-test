@@ -1,12 +1,103 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #36313d;
+  font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+h1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: 1.5rem;
+  color: white;
+  font-family: "Futura PT", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+    "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.header {
+  background-color: #1e272e;
+  font-family: "Futura PT", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.header a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5rem auto;
+  max-width: 90%;
+  width: 57ch;
+}
+
+.project-preview {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .project-preview {
+    flex: 1 50%;
+    max-width: calc(50% - 0.5rem);
+  }
+}
+
+.project-preview h2 {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.project-preview h2 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.project-preview p {
+  margin-top: 0.5rem;
+}
+
+.project {
+  width: 100%;
+}
+
+.project h3,
+.project img,
+.project p {
+  margin-top: 1rem;
+}
+
+.project ul {
+  margin-top: 0.5rem;
 }
 article,
 aside,
